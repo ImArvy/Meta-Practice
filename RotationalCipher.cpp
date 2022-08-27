@@ -42,7 +42,7 @@ void rotateLowercaseLetters(string& input, int i, int rotationFactor) {
 string rotationalCipher(string& input, int rotationFactor) {
     // Iterate over the string input
     for (int i = 0; i < input.length(); i++) {
-        int currentChar = (int)input[i]; // ASCII code for input[i] stored in currentChar
+        int currentChar = (int)input[i]; // ASCII for input[i] stored in currentChar
         // Char is a number if ASCII in range 48-57
         if (currentChar >= 48 && currentChar <= 57) {
             rotateNumbers(input, i, rotationFactor); // Rotate the number
